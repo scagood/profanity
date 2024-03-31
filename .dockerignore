@@ -1,0 +1,16 @@
+# Ignore everything
+**
+
+# Allow files and directories
+!/package.json
+!/.yarn*
+
+!/.yarnrc.yml
+!/yarn.lock
+
+!/data/english-no-swears.txt
+!/data/english-swears.txt
+
+!/index.js
+!/src
+!/public
