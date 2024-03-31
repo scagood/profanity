@@ -1,4 +1,4 @@
-import { checkSwears } from './src/custom/swears.js';
+import { checkSwears, matchers } from './src/custom/swears.js';
 import { checkNoSwears } from './src/custom/no-swears.js';
 
 import http from 'http-errors'
@@ -32,7 +32,7 @@ app.get('/toxic', async (request, response) => {
     if (typeof query !== 'string') {
       throw new http.BadRequest('Invalid query');
     }
-    
+
     // A little bit of allowed auto cleaning
     query = query.replace(/[\t ]+/, ' ').trim();
     if (query.length > 500) {
@@ -45,25 +45,34 @@ app.get('/toxic', async (request, response) => {
 
     const swears = checkSwears(query);
     const dirty = checkNoSwears(query);
-    
+
     response.json({
-      count: swears.length,
-      possibleDirty: dirty,
-      possibleMatches: swears,
+      "not-known-good": dirty,
+      "possible-swear": swears,
     })
-  } catch (error) {
-    response.status(error.status??500).json({
-      status: error.status ?? 500,
-      message: error.message,
-    })
+  } catch (err) {
+    const error = /** @type {import('http-errors').HttpError} */ (err);
+
+    const status = error.status ?? 500;
+    const message = error.message ?? 'Unknown error';
+    response.status(status).json({ status, message })
   }
 });
 
 app.use(express.static(import.meta.dirname + '/public'))
 
-app.listen(8080)
+const server = app.listen(process.env.PORT ?? 8080)
 
-// console.info(await toxicCheck("Fuck you"));
-// console.info(await toxicCheck("Ffffffuuuuuuuccccckkkkk uuuuu!"));
-// console.info(await toxicCheck("Fuck you very much."));
-// console.info(await toxicCheck("If I try to hide a fuck you in amongst other things, will it notice?"));
+server.on('listening', () => {
+  const address = server.address();
+
+  if (address == null) {
+    return console.error('Something is very wrong');
+  }
+
+  if (typeof address === 'string') {
+    return console.info('Listening to:', address);
+  }
+
+  return console.info('Listening on:', `${address.address}:${address.port}`);
+})
