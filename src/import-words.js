@@ -20,7 +20,7 @@ export async function importWords(file) {
   if (file.startsWith('file:')) {
     file = fileURLToPath(file);
   }
-  
+
   const data = await readFile(file, 'utf8');
   return cleanWords(data);
 }

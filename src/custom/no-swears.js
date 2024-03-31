@@ -1,5 +1,5 @@
 import { inspect } from 'node:util';
-import nlp from 'compromise/two';
+import nlp from 'compromise';
 
 import { importWords } from '../import-words.js';
 
@@ -10,12 +10,12 @@ const words = new Set(await importWords(
 ));
 
 /**
- * @param {string} string
+ * @param {string} input
  * @returns {string}
  */
 function expand(input) {
   let count = 5;
-  
+
   while (count-- > 0) {
     const output = nlp(input).contractions().expand().all().text();
     if (output === input) {
@@ -24,7 +24,7 @@ function expand(input) {
 
     input = output;
   }
-  
+
   throw new Error('I mean, we\'re here, and I don\'t know how');
 }
 
@@ -37,7 +37,7 @@ export function checkNoSwears(input)  {
   // it's -> it is, gonna -> going to, etc
   const expanded = expand(input);
   const unknown = [];
-  
+
   for (const term of nlp(expanded).termList()) {
     if (words.has(term.text.toLowerCase())) {
       continue;

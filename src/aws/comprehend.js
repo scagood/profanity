@@ -25,7 +25,7 @@ export async function toxicCheck(input) {
   if (response.ResultList == null) {
     throw new Error('Not results');
   }
-  
+
   return response.ResultList[0]
 }
 

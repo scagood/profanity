@@ -30,7 +30,7 @@ export function cacher(name, handler) {
     if (cached != null) {
       return JSON.parse(cached);
     }
-    
+
     const result = await handler(input);
     await redis.set(`${name}:${hash}`, JSON.stringify(result));
     return result;
