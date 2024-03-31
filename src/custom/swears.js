@@ -1,4 +1,6 @@
-import { words } from './words.js';
+import { importWords } from '../import-words.js';
+
+const words = await importWords(import.meta.resolve('../../data/english-swears.txt'));
 
 /** @type {Record<string, string[]>} */
 const leet = {
@@ -19,23 +21,24 @@ const leet = {
   o: [ 'o', '0', '()', 'u' ],
   p: [ 'p' ],
   q: [ 'q', '9', 'c', 'k' ],
-  r: [ 'r' ],
+  r: [ 'r', '¬' ],
   s: [ 's', 'z', '5', '$' ],
   t: [ 't', '7', '+' ],
-  u: [ 'u', 'o' ],
-  v: [ 'v', '\\/' ],
+  u: [ 'u', 'o', 'v', '\\/', '\\//', '\\\\/', '\\\\//' ],
+  v: [ 'v', '\\/', '\\//', '\\\\/', '\\\\//' ],
   w: [ 'w', 'vv' ],
   x: [ 'x', '%' ],
   y: [ 'y', '`/', 'e', 'i' ],
   z: [ 'z', 's', '5', '7_' ],
 }
 
-/** @type {[ RegExp, string[] ][]} */
+/** @type {Array<[ RegExp, string[] ]>} */
 const phonetics = [
   [ /(ait|ate)/, [ 'ait', 'ate' ] ],
   [ /(asm)/, [ 'asm', 'asim', 'asum' ] ],
   [ /(ck)/, [ 'ck', 'c', 'k', 'q' ] ],
-  [ /(ch)/, [ 'ch', 'k' ] ],
+  [ /(ch)/, [ 'ch', 'k', 'c' ] ],
+  [ /(cu)/, [ 'cu', 'c', 'k' ] ],
   [ /(ar|er|ur)/, [ 'ar', 'er', 'ur', 'a', 'e', 'r' ] ],
   [ /(f)/, [ 'f', 'ph' ] ],
   [ /(gg)/, [ 'gg', 'g' ] ],
@@ -126,7 +129,7 @@ const matchers = words.map((word => [word, wordLeetRegex(word)]));;
  * @param {string} input
  * @returns {string[]}
  */
-export function checkString(input)  {
+export function checkSwears(input)  {
   const possible = [];
 
   for (const [word, matcher] of matchers) {

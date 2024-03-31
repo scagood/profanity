@@ -1174,6 +1174,7 @@ __metadata:
     "@types/express": "npm:4.17.21"
     "@types/http-errors": "npm:^2"
     "@types/node": "npm:20.11.30"
+    compromise: "npm:14.12.0"
     express: "npm:4.19.2"
     http-errors: "npm:2.0.0"
     redis: "npm:4.6.13"
@@ -1238,6 +1239,17 @@ __metadata:
   version: 1.1.2
   resolution: "cluster-key-slot@npm:1.1.2"
   checksum: 10/516ed8b5e1a14d9c3a9c96c72ef6de2d70dfcdbaa0ec3a90bc7b9216c5457e39c09a5775750c272369070308542e671146120153062ab5f2f481bed5de2c925f
+  languageName: node
+  linkType: hard
+
+"compromise@npm:14.12.0":
+  version: 14.12.0
+  resolution: "compromise@npm:14.12.0"
+  dependencies:
+    efrt: "npm:2.7.0"
+    grad-school: "npm:0.0.5"
+    suffix-thumb: "npm:5.0.2"
+  checksum: 10/cc46e5f2d356cb59b967ef10b73865a28ae7c823d22e64863fd78644aa873a7efbc8d8896ee6ec2b27a521acf3e66b1da888df2af430469218058e48e386b403
   languageName: node
   linkType: hard
 
@@ -1309,6 +1321,13 @@ __metadata:
   version: 1.1.1
   resolution: "ee-first@npm:1.1.1"
   checksum: 10/1b4cac778d64ce3b582a7e26b218afe07e207a0f9bfe13cc7395a6d307849cfe361e65033c3251e00c27dd060cab43014c2d6b2647676135e18b77d2d05b3f4f
+  languageName: node
+  linkType: hard
+
+"efrt@npm:2.7.0":
+  version: 2.7.0
+  resolution: "efrt@npm:2.7.0"
+  checksum: 10/76febcd9efccce436beca5c5cc056187f9d9f4c64c9528b6fb467b4eb91f2b9f689f602f2451cd6bf37c77a2664b38ae4a6c506c03db462fec6c74d9d92b4e67
   languageName: node
   linkType: hard
 
@@ -1461,6 +1480,13 @@ __metadata:
   dependencies:
     get-intrinsic: "npm:^1.1.3"
   checksum: 10/5fbc7ad57b368ae4cd2f41214bd947b045c1a4be2f194a7be1778d71f8af9dbf4004221f3b6f23e30820eb0d052b4f819fe6ebe8221e2a3c6f0ee4ef173421ca
+  languageName: node
+  linkType: hard
+
+"grad-school@npm:0.0.5":
+  version: 0.0.5
+  resolution: "grad-school@npm:0.0.5"
+  checksum: 10/1330b02b71ef37f9a507261c1219056d19caa46f99e65fe30fe9b5c98235b5dec23d74928ed166516054b30c4cf470903de482311d2d25d985e904989b53c69a
   languageName: node
   linkType: hard
 
@@ -1772,6 +1798,13 @@ __metadata:
   version: 1.0.5
   resolution: "strnum@npm:1.0.5"
   checksum: 10/d3117975db8372d4d7b2c07601ed2f65bf21cc48d741f37a8617b76370d228f2ec26336e53791ebc3638264d23ca54e6c241f57f8c69bd4941c63c79440525ca
+  languageName: node
+  linkType: hard
+
+"suffix-thumb@npm:5.0.2":
+  version: 5.0.2
+  resolution: "suffix-thumb@npm:5.0.2"
+  checksum: 10/cd1d656c5804ad686b7d0b89eba3dcc47a55a8134c5f4dc6cff1cfb7b12bb26007ec8f58e52b5a29e0a9812d463f93f4091942f9cb6c76e53ab88280ded9c1cb
   languageName: node
   linkType: hard
 

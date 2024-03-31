@@ -1,4 +1,5 @@
-import { checkString } from './src/custom.js';
+import { checkSwears } from './src/custom/swears.js';
+import { checkNoSwears } from './src/custom/no-swears.js';
 
 import http from 'http-errors'
 import express from 'express';
@@ -32,11 +33,13 @@ app.get('/toxic', async (request, response) => {
       throw new http.BadRequest('Only space and visible ASCII characters allowed');
     }
 
-    const custom = checkString(query);
+    const swears = checkSwears(query);
+    const dirty = checkNoSwears(query);
     
     response.json({
-      count: custom.length,
-      possibleMatches: custom,
+      count: swears.length,
+      possibleDirty: dirty,
+      possibleMatches: swears,
     })
   } catch (error) {
     response.status(error.status??500).json({
