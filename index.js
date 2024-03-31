@@ -16,6 +16,16 @@ const app = express();
 app.set('json spaces', 2)
 
 
+app.get('/swears', async (request, response) => {
+  const output = [];
+  for (const match of matchers) {
+    output.push(
+      `<a href="https://piebridge.me/regulex/#!flags=${match[1].flags}&re=${encodeURIComponent(match[1].source)}" target="_blank">${match[0]}</a>`
+    )
+  }
+
+  response.send(output.join('<br>'))
+});
 app.get('/toxic', async (request, response) => {
   try {
     let query = request.query.s;

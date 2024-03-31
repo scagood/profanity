@@ -123,7 +123,7 @@ function wordLeetRegex(word) {
 }
 
 /** @type {[string, RegExp][]} */
-const matchers = words.map((word => [word, wordLeetRegex(word)]));;
+export const matchers = words.map((word => [word, wordLeetRegex(word)]));;
 
 /**
  * @param {string} input
