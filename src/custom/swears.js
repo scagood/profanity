@@ -6,12 +6,12 @@ const words = await importWords(import.meta.resolve('../../data/english-swears.t
 /** @type {Record<string, string[]>} */
 const leet = {
   a: [ 'a', '@', '4' ],
-  b: [ 'b', '8', '|3', '13', 'l3' ],
+  b: [ 'b', '6', '8', '|3', '13', 'l3' ],
   c: [ 'c', '(', 'k', 'q' ],
   d: [ 'd', '|)', '|}' ],
   e: [ 'e', '3', 'i', 'y', '*' ],
   f: [ 'f', 'ph' ],
-  g: [ 'g', '9', 'j' ],
+  g: [ 'g', '6', '9', 'j' ],
   h: [ 'h', '#', '|-|', 'I-I' ],
   i: [ 'i', '1', 'l', '|', '!', 'e', 'y' ],
   j: [ 'j', 'g' ],
