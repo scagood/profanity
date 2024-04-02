@@ -1,5 +1,6 @@
 import { checkSwears, matchers } from './src/custom/swears.js';
 import { checkNoSwears } from './src/custom/no-swears.js';
+import { checkAcronyms } from './src/custom/acronyms.js';
 
 import http from 'http-errors'
 import express from 'express';
@@ -45,10 +46,12 @@ app.get('/toxic', async (request, response) => {
 
     const swears = checkSwears(query);
     const dirty = checkNoSwears(query);
+    const acronyms = checkAcronyms(query);
 
     response.json({
       "not-known-good": dirty,
       "possible-swear": swears,
+      "possible-acronyms": acronyms,
     })
   } catch (err) {
     const error = /** @type {import('http-errors').HttpError} */ (err);
