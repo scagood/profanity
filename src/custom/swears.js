@@ -75,6 +75,9 @@ const phonetics = [
   [ /(?<!^|[co])o(?![o]|$)/, [ 'o?' ] ],
   [ /(?<!^|[cqu])u(?![u]|$)/, [ 'u?' ] ],
 
+  // Prevent 2 letter matches "ti?t" -> "tit", not "tt"
+  [ /^([a-z]{2})\?([a-z])$/, [ '$1$2' ] ],
+
   // Allow for single repeating letters (fanny -> fany)
   [ /([a-z])\1+(?!$)/, [ '$1' ] ],
 ];
@@ -111,7 +114,7 @@ function wordLeetRegex(word) {
     for (const current of puddle) {
       const parts = verboseSplit(match, current);
 
-      if (parts.length === 1) {
+      if (parts.every(part => part.match === false)) {
         nextPuddle.push(current);
         continue;
       }
