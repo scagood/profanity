@@ -1,5 +1,5 @@
 import { ComprehendClient, DetectToxicContentCommand } from "@aws-sdk/client-comprehend";
-import { cacher } from './cacher.js';
+import { cacher } from '../utilities/cacher.js';
 
 const client = new ComprehendClient({ region: process.env.AWS_DEFAULT_REGION });
 

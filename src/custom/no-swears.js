@@ -1,7 +1,7 @@
 import { inspect } from 'node:util';
 import nlp from 'compromise';
 
-import { importWords } from '../import-words.js';
+import { importWords } from '../utilities/import-words.js';
 
 inspect.defaultOptions.depth = null
 
