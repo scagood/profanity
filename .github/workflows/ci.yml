@@ -47,5 +47,5 @@ jobs:
             token: ${{ secrets.GITHUB_TOKEN }}
             owner_type: user
             repository_owner: scagood
-            repository: alex/profanity
+            repository: alex-stuff
             untagged_only: true
