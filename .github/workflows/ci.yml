@@ -48,4 +48,5 @@ jobs:
             owner_type: user
             repository_owner: scagood
             repository: alex-stuff
+            package_name: alex/profanity
             untagged_only: true
