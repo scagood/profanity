@@ -40,3 +40,12 @@ jobs:
           push: true
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
+
+      - name: Delete all containers from repository without tags
+        uses: Chizkiyahu/delete-untagged-ghcr-action@v3
+        with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            owner_type: user
+            repository_owner: scagood
+            repository: alex/profanity
+            untagged_only: true
