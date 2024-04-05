@@ -37,6 +37,8 @@ jobs:
         with:
           context: .
           platforms: linux/amd64,linux/arm64
+          cache-from: type=registry,ref=ghcr.io/scagood/alex/profanity:main
+          cache-to: type=inline
           push: true
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
