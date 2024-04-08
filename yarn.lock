@@ -1220,7 +1220,7 @@ __metadata:
     "@types/express": "npm:4.17.21"
     "@types/http-errors": "npm:^2"
     "@types/node": "npm:20.12.5"
-    compromise: "npm:14.12.0"
+    compromise: "npm:14.13.0"
     express: "npm:4.19.2"
     http-errors: "npm:2.0.0"
     redis: "npm:4.6.13"
@@ -1288,14 +1288,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"compromise@npm:14.12.0":
-  version: 14.12.0
-  resolution: "compromise@npm:14.12.0"
+"compromise@npm:14.13.0":
+  version: 14.13.0
+  resolution: "compromise@npm:14.13.0"
   dependencies:
     efrt: "npm:2.7.0"
     grad-school: "npm:0.0.5"
     suffix-thumb: "npm:5.0.2"
-  checksum: 10/cc46e5f2d356cb59b967ef10b73865a28ae7c823d22e64863fd78644aa873a7efbc8d8896ee6ec2b27a521acf3e66b1da888df2af430469218058e48e386b403
+  checksum: 10/80c46e6a60e7640933b764855900ffbc965abb52e3f51b095239cabb63272f9abe657474c0cd72966dfe879760d8e05ca011cc4a9e8b995ee8dd578536be1a4b
   languageName: node
   linkType: hard
 
