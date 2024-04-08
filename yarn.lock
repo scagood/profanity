@@ -72,7 +72,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-comprehend@npm:^3.540.0":
+"@aws-sdk/client-comprehend@npm:3.540.0":
   version: 3.540.0
   resolution: "@aws-sdk/client-comprehend@npm:3.540.0"
   dependencies:
@@ -216,7 +216,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-sts@npm:3.540.0, @aws-sdk/client-sts@npm:^3.540.0":
+"@aws-sdk/client-sts@npm:3.540.0":
   version: 3.540.0
   resolution: "@aws-sdk/client-sts@npm:3.540.0"
   dependencies:
@@ -1176,8 +1176,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "alex-profanity@workspace:."
   dependencies:
-    "@aws-sdk/client-comprehend": "npm:^3.540.0"
-    "@aws-sdk/client-sts": "npm:^3.540.0"
+    "@aws-sdk/client-comprehend": "npm:3.540.0"
+    "@aws-sdk/client-sts": "npm:3.540.0"
     "@eslint-community/regexpp": "npm:4.10.0"
     "@types/express": "npm:4.17.21"
     "@types/http-errors": "npm:^2"
