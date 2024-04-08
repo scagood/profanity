@@ -1,5 +1,5 @@
-import { importWords } from '../import-words.js';
-import { verboseSplit } from '../split.js';
+import { importWords } from '../utilities/import-words.js';
+import { verboseSplit } from '../utilities/split.js';
 
 const words = await importWords(import.meta.resolve('../../data/english-swears.txt'));
 
@@ -18,7 +18,7 @@ const leet = {
   k: [ 'k', '|<', '1<', 'I<', 'c', 'q' ],
   l: [ 'l', '1', 'i', '|', '!' ],
   m: [ 'm' ],
-  n: [ 'n' ],
+  n: [ 'n', '|\|', '/\/', '/V', '][\\][', 'И', 'и', 'п' ],
   o: [ 'o', '0', '()', 'u' ],
   p: [ 'p' ],
   q: [ 'q', '9' ],

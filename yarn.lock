@@ -533,6 +533,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint-community/regexpp@npm:4.10.0":
+  version: 4.10.0
+  resolution: "@eslint-community/regexpp@npm:4.10.0"
+  checksum: 10/8c36169c815fc5d726078e8c71a5b592957ee60d08c6470f9ce0187c8046af1a00afbda0a065cc40ff18d5d83f82aed9793c6818f7304a74a7488dc9f3ecbd42
+  languageName: node
+  linkType: hard
+
 "@redis/bloom@npm:1.2.0":
   version: 1.2.0
   resolution: "@redis/bloom@npm:1.2.0"
@@ -1171,6 +1178,7 @@ __metadata:
   dependencies:
     "@aws-sdk/client-comprehend": "npm:^3.540.0"
     "@aws-sdk/client-sts": "npm:^3.540.0"
+    "@eslint-community/regexpp": "npm:4.10.0"
     "@types/express": "npm:4.17.21"
     "@types/http-errors": "npm:^2"
     "@types/node": "npm:20.11.30"
