@@ -456,23 +456,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/types@npm:3.577.0":
+"@aws-sdk/types@npm:3.577.0, @aws-sdk/types@npm:^3.222.0":
   version: 3.577.0
   resolution: "@aws-sdk/types@npm:3.577.0"
   dependencies:
     "@smithy/types": "npm:^3.0.0"
     tslib: "npm:^2.6.2"
   checksum: 10/a384ea32fcd0ae02a8058aa1f0d370de4c54f38a5e88bf649090e85bde09ef36efca49351f88669152626826441a7de8a3b1dfd0d6886553eeb2234d5205a196
-  languageName: node
-  linkType: hard
-
-"@aws-sdk/types@npm:^3.222.0":
-  version: 3.535.0
-  resolution: "@aws-sdk/types@npm:3.535.0"
-  dependencies:
-    "@smithy/types": "npm:^2.12.0"
-    tslib: "npm:^2.6.2"
-  checksum: 10/29c2def0ef0a10c0cc44d45b18e149ed6884a6417ddef7a23a58d50ad83f71cf0b00dd774fcc57fcdf85e1e21a8849d9e25999943435a1487ee8ac127a668c6d
   languageName: node
   linkType: hard
 
@@ -489,11 +479,11 @@ __metadata:
   linkType: hard
 
 "@aws-sdk/util-locate-window@npm:^3.0.0":
-  version: 3.535.0
-  resolution: "@aws-sdk/util-locate-window@npm:3.535.0"
+  version: 3.568.0
+  resolution: "@aws-sdk/util-locate-window@npm:3.568.0"
   dependencies:
     tslib: "npm:^2.6.2"
-  checksum: 10/6405c0abd75900367c59cdd07db0a2da45ad94640293a6d5baa03ec42c71737f215df0a70c939b20ba3f5bd7068242a0e2d58c091e432cfa4aa034ea3ef7f874
+  checksum: 10/372acb9c6df3861afae4ced5d8d3aad40d8dc633684e765b6ed74baff7f4f30a778f96829ee81d56639c14cb4346043069a2b911c58387dd20591c0f6e3a524d
   languageName: node
   linkType: hard
 
@@ -871,15 +861,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@smithy/types@npm:^2.12.0":
-  version: 2.12.0
-  resolution: "@smithy/types@npm:2.12.0"
-  dependencies:
-    tslib: "npm:^2.6.2"
-  checksum: 10/2fb459b10d0c51d10da92e9d4b1551c1312dfb2a4739c4aeaeab703e8b35260a87ebc0c1cbb8a1deba669369ae7addab4eb81d99c70d0021b13cd26050a8c9b8
-  languageName: node
-  linkType: hard
-
 "@smithy/types@npm:^3.0.0":
   version: 3.0.0
   resolution: "@smithy/types@npm:3.0.0"
@@ -1072,14 +1053,14 @@ __metadata:
   linkType: hard
 
 "@types/express-serve-static-core@npm:^4.17.33":
-  version: 4.17.43
-  resolution: "@types/express-serve-static-core@npm:4.17.43"
+  version: 4.19.1
+  resolution: "@types/express-serve-static-core@npm:4.19.1"
   dependencies:
     "@types/node": "npm:*"
     "@types/qs": "npm:*"
     "@types/range-parser": "npm:*"
     "@types/send": "npm:*"
-  checksum: 10/9079e137470e0456bb8e77ae66df9505ee12591e94860bde574cfe52c5c60bbc5bf7dd44f5689c3cbb1baf0aa84442d9a21f53dcd921d18745727293cd5a5fd6
+  checksum: 10/a400e2c6a2d64373290f0fa25fa2d70bad44fbb1d12a56237a8dfb3bf300bc102d6f5fa6aaed2ce853e37226589905ce0d658ad1b9c0115d9cd7ce446608140c
   languageName: node
   linkType: hard
 
@@ -1102,13 +1083,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mime@npm:*":
-  version: 3.0.4
-  resolution: "@types/mime@npm:3.0.4"
-  checksum: 10/a6139c8e1f705ef2b064d072f6edc01f3c099023ad7c4fce2afc6c2bf0231888202adadbdb48643e8e20da0ce409481a49922e737eca52871b3dc08017455843
-  languageName: node
-  linkType: hard
-
 "@types/mime@npm:^1":
   version: 1.3.5
   resolution: "@types/mime@npm:1.3.5"
@@ -1116,16 +1090,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
-  version: 20.11.30
-  resolution: "@types/node@npm:20.11.30"
-  dependencies:
-    undici-types: "npm:~5.26.4"
-  checksum: 10/78515bc768d2b878e2e06a1c20eb4f5840072b79b8d28ff3dd0a7feaaf48fd3a2ac03cfa5bc7564da82db5906b43e9ba0e5df9f43d870b7aae2942306e208815
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.12.12":
+"@types/node@npm:*, @types/node@npm:20.12.12":
   version: 20.12.12
   resolution: "@types/node@npm:20.12.12"
   dependencies:
@@ -1135,9 +1100,9 @@ __metadata:
   linkType: hard
 
 "@types/qs@npm:*":
-  version: 6.9.14
-  resolution: "@types/qs@npm:6.9.14"
-  checksum: 10/d3b76021d36b86c0063ec4b7373e9fa470754914e486fbfe54b3a8866dad037800a2c2068ecbcaa9399ae3ed15772a26b07e67793ed2519cf2de199104014716
+  version: 6.9.15
+  resolution: "@types/qs@npm:6.9.15"
+  checksum: 10/97d8208c2b82013b618e7a9fc14df6bd40a73e1385ac479b6896bafc7949a46201c15f42afd06e86a05e914f146f495f606b6fb65610cc60cf2e0ff743ec38a2
   languageName: node
   linkType: hard
 
@@ -1159,13 +1124,13 @@ __metadata:
   linkType: hard
 
 "@types/serve-static@npm:*":
-  version: 1.15.5
-  resolution: "@types/serve-static@npm:1.15.5"
+  version: 1.15.7
+  resolution: "@types/serve-static@npm:1.15.7"
   dependencies:
     "@types/http-errors": "npm:*"
-    "@types/mime": "npm:*"
     "@types/node": "npm:*"
-  checksum: 10/49aa21c367fffe4588fc8c57ea48af0ea7cbadde7418bc53cde85d8bd57fd2a09a293970d9ea86e79f17a87f8adeb3e20da76aab38e1c4d1567931fa15c8af38
+    "@types/send": "npm:*"
+  checksum: 10/c5a7171d5647f9fbd096ed1a26105759f3153ccf683824d99fee4c7eb9cde2953509621c56a070dd9fb1159e799e86d300cbe4e42245ebc5b0c1767e8ca94a67
   languageName: node
   linkType: hard
 
