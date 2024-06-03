@@ -5,7 +5,7 @@
   "dependencies": {
     "@aws-sdk/client-comprehend": "3.587.0",
     "@aws-sdk/client-sts": "3.587.0",
-    "@eslint-community/regexpp": "4.10.0",
+    "@eslint-community/regexpp": "4.10.1",
     "compromise": "14.13.0",
     "express": "4.19.2",
     "http-errors": "2.0.0",
