@@ -613,8 +613,8 @@ __metadata:
   linkType: hard
 
 "@smithy/core@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@smithy/core@npm:2.1.1"
+  version: 2.2.0
+  resolution: "@smithy/core@npm:2.2.0"
   dependencies:
     "@smithy/middleware-endpoint": "npm:^3.0.1"
     "@smithy/middleware-retry": "npm:^3.0.3"
@@ -624,7 +624,7 @@ __metadata:
     "@smithy/types": "npm:^3.0.0"
     "@smithy/util-middleware": "npm:^3.0.0"
     tslib: "npm:^2.6.2"
-  checksum: 10/3a96034c95d28aa29120178757bb7a14a8fb6269f1a2d25a41032444fc2303980598fef27ecc6b4a1a55ffe196900d54c79fe16ac701fc0f1e8a8a696ade0012
+  checksum: 10/dc329fc4ce31c544e35fc563a9d8d5a52fa96ad39070a45e82580515af6bc4327b1514d04c2750552b0db32135262dd95fb4565316ac2d7897ff1afacc981e58
   languageName: node
   linkType: hard
 
@@ -1091,7 +1091,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.14.0":
+"@types/node@npm:*":
+  version: 20.14.2
+  resolution: "@types/node@npm:20.14.2"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10/c38e47b190fa0a8bdfde24b036dddcf9401551f2fb170a90ff33625c7d6f218907e81c74e0fa6e394804a32623c24c60c50e249badc951007830f0d02c48ee0f
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:20.14.0":
   version: 20.14.0
   resolution: "@types/node@npm:20.14.0"
   dependencies:
@@ -1804,9 +1813,9 @@ __metadata:
   linkType: hard
 
 "tslib@npm:^2.3.1, tslib@npm:^2.6.2":
-  version: 2.6.2
-  resolution: "tslib@npm:2.6.2"
-  checksum: 10/bd26c22d36736513980091a1e356378e8b662ded04204453d353a7f34a4c21ed0afc59b5f90719d4ba756e581a162ecbf93118dc9c6be5acf70aa309188166ca
+  version: 2.6.3
+  resolution: "tslib@npm:2.6.3"
+  checksum: 10/52109bb681f8133a2e58142f11a50e05476de4f075ca906d13b596ae5f7f12d30c482feb0bff167ae01cfc84c5803e575a307d47938999246f5a49d174fc558c
   languageName: node
   linkType: hard
 
