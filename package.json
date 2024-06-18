@@ -3,8 +3,8 @@
   "type": "module",
   "packageManager": "yarn@4.3.0",
   "dependencies": {
-    "@aws-sdk/client-comprehend": "3.592.0",
-    "@aws-sdk/client-sts": "3.592.0",
+    "@aws-sdk/client-comprehend": "3.600.0",
+    "@aws-sdk/client-sts": "3.600.0",
     "@eslint-community/regexpp": "4.10.1",
     "compromise": "14.13.0",
     "express": "4.19.2",
