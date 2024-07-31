@@ -9,7 +9,7 @@
     "compromise": "14.14.0",
     "express": "4.19.2",
     "http-errors": "2.0.0",
-    "redis": "4.6.15"
+    "redis": "4.7.0"
   },
   "devDependencies": {
     "@types/express": "4.17.21",
