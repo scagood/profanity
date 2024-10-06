@@ -6,7 +6,7 @@
     "@aws-sdk/client-comprehend": "3.651.1",
     "@aws-sdk/client-sts": "3.651.1",
     "@eslint-community/regexpp": "4.11.1",
-    "compromise": "14.14.0",
+    "compromise": "14.14.1",
     "express": "4.21.0",
     "http-errors": "2.0.0",
     "redis": "4.7.0"
