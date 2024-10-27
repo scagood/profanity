@@ -515,10 +515,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint-community/regexpp@npm:4.11.1":
-  version: 4.11.1
-  resolution: "@eslint-community/regexpp@npm:4.11.1"
-  checksum: 10/934b6d3588c7f16b18d41efec4fdb89616c440b7e3256b8cb92cfd31ae12908600f2b986d6c1e61a84cbc10256b1dd3448cd1eec79904bd67ac365d0f1aba2e2
+"@eslint-community/regexpp@npm:4.12.0":
+  version: 4.12.0
+  resolution: "@eslint-community/regexpp@npm:4.12.0"
+  checksum: 10/786faa3b5579ca8aebbebe750e90975244b5b56e06cbbf0fa066454b51c25be144573424a9cf6b09a8e4911de707d484f92d1bdc904f67408e88ac96da5b469b
   languageName: node
   linkType: hard
 
@@ -1181,7 +1181,7 @@ __metadata:
   dependencies:
     "@aws-sdk/client-comprehend": "npm:3.666.0"
     "@aws-sdk/client-sts": "npm:3.666.0"
-    "@eslint-community/regexpp": "npm:4.11.1"
+    "@eslint-community/regexpp": "npm:4.12.0"
     "@types/express": "npm:5.0.0"
     "@types/http-errors": "npm:^2"
     "@types/node": "npm:20.16.10"
