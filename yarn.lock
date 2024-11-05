@@ -1121,12 +1121,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.8.2":
-  version: 22.8.2
-  resolution: "@types/node@npm:22.8.2"
+"@types/node@npm:22.9.0":
+  version: 22.9.0
+  resolution: "@types/node@npm:22.9.0"
   dependencies:
     undici-types: "npm:~6.19.8"
-  checksum: 10/ae4ba44dd13cfd5277fae062f2e55d12631db10b7ec67c842b9a0e21c767a5538c07e6944320fba7a2a7c2aba3130768203c8553a5f1896073e5a39e7f5df195
+  checksum: 10/a7df3426891868b0f5fb03e46aeddd8446178233521c624a44531c92a040cf08a82d8235f7e1e02af731fd16984665d4d71f3418caf9c2788313b10f040d615d
   languageName: node
   linkType: hard
 
@@ -1184,7 +1184,7 @@ __metadata:
     "@eslint-community/regexpp": "npm:4.12.0"
     "@types/express": "npm:5.0.0"
     "@types/http-errors": "npm:^2"
-    "@types/node": "npm:22.8.2"
+    "@types/node": "npm:22.9.0"
     compromise: "npm:14.14.1"
     express: "npm:4.21.0"
     http-errors: "npm:2.0.0"
