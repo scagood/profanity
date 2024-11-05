@@ -1,7 +1,7 @@
 {
   "name": "alex-profanity",
   "type": "module",
-  "packageManager": "yarn@4.5.0",
+  "packageManager": "yarn@4.5.1",
   "dependencies": {
     "@aws-sdk/client-comprehend": "3.666.0",
     "@aws-sdk/client-sts": "3.666.0",
