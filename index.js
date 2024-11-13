@@ -62,7 +62,10 @@ app.get('/toxic', async (request, response) => {
   }
 });
 
-app.use(express.static(import.meta.dirname + '/public'))
+app.use(express.static(
+  import.meta.dirname + '/public',
+  { extensions: [ 'html' ] },
+));
 
 const server = app.listen(process.env.PORT ?? 8080)
 
