@@ -28,7 +28,6 @@ function expand(input) {
   throw new Error('I mean, we\'re here, and I don\'t know how');
 }
 
-
 /**
  * @param {string} input
  * @returns {string[]}

@@ -152,15 +152,12 @@ function expandCharacterSet(characterSet) {
   throw new Error(`Cannot expand "CharacterSet.${characterSet.kind}"`);
 }
 
+const ascii = Array(127).fill(0).map((_, i) => String.fromCharCode(i));
 /**
  * @param {AST.CharacterClass} characterClass
  * @returns {string[]}
  */
-function expandCharacterClass(characterClass) {
-  if (characterClass.negate) {
-    throw new Error('cannot expand CharacterClass.negated == true');
-  }
-
+function extractCharacterClass(characterClass) {
   return characterClass.elements
     .flatMap(element => {
       switch (element.type) {
@@ -176,6 +173,21 @@ function expandCharacterClass(characterClass) {
       throw new Error(`Cannot expand "${element.type}"`);
     })
     .filter(unique);
+}
+
+/**
+ * @param {AST.CharacterClass} characterClass
+ * @returns {string[]}
+ */
+function expandCharacterClass(characterClass) {
+  const chars = extractCharacterClass(characterClass);
+
+  if (characterClass.negate) {
+    const set = new Set(chars);
+    return ascii.filter(char => set.has(char) === false);
+  }
+
+  return chars;
 }
 
 /**
@@ -256,5 +268,5 @@ console.info(expandRegex(/(as|df)(as|df)\1/));
 console.info(expandRegex(/[aeiou]/));
 console.info(expandRegex(/[a-f]/));
 console.info(expandRegex(/\a{3,5}\b/));
-console.info(expandRegex(/(\r?\n|\r)+/));
+console.info(expandRegex(/(\r?\n|\r)+/, {maxQuantifier: 3}));
 console.info(expandRegex(/[|Il/]3/));
