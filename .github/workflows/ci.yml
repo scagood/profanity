@@ -23,7 +23,7 @@ jobs:
       - uses: docker/metadata-action@v5
         id: metadata
         with:
-          images: ghcr.io/scagood/alex/profanity
+          images: ghcr.io/scagood/profanity
           tags: |
             type=ref,event=branch
             type=ref,event=pr
@@ -37,7 +37,7 @@ jobs:
         with:
           context: .
           platforms: linux/amd64,linux/arm64
-          cache-from: type=registry,ref=ghcr.io/scagood/alex/profanity:main
+          cache-from: type=registry,ref=ghcr.io/scagood/profanity:main
           cache-to: type=inline
           push: true
           tags: ${{ steps.metadata.outputs.tags }}
@@ -49,6 +49,6 @@ jobs:
             token: ${{ secrets.GITHUB_TOKEN }}
             owner_type: user
             repository_owner: scagood
-            repository: alex-stuff
-            package_name: alex/profanity
+            repository: profanity
+            package_name: profanity
             untagged_only: true

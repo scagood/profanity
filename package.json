@@ -1,5 +1,5 @@
 {
-  "name": "alex-profanity",
+  "name": "profanity",
   "type": "module",
   "packageManager": "yarn@4.5.1",
   "dependencies": {
