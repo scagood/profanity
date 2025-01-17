@@ -4,7 +4,7 @@
   "packageManager": "yarn@4.6.0",
   "dependencies": {
     "@eslint-community/regexpp": "4.12.1",
-    "compromise": "14.14.3",
+    "compromise": "14.14.4",
     "express": "4.21.2",
     "http-errors": "2.0.0",
     "redis": "4.7.0"
