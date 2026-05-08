@@ -28,6 +28,10 @@
   ],
   "packageRules": [
     {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
       "semanticCommits": "enabled",
       "semanticCommitType": "deps",
       "matchPackageNames": [
