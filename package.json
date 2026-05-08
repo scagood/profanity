@@ -6,7 +6,7 @@
     "@eslint-community/regexpp": "4.12.1",
     "compromise": "14.14.3",
     "express": "4.21.2",
-    "http-errors": "2.0.0",
+    "http-errors": "2.0.1",
     "redis": "4.7.0"
   },
   "devDependencies": {
