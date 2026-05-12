@@ -3,7 +3,7 @@
   "type": "module",
   "packageManager": "yarn@4.6.0",
   "dependencies": {
-    "@eslint-community/regexpp": "4.12.1",
+    "@eslint-community/regexpp": "4.12.2",
     "compromise": "14.15.0",
     "express": "4.22.2",
     "http-errors": "2.0.1",
