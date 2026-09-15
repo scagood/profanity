@@ -1,6 +1,6 @@
 FROM node:24-alpine
 
-LABEL org.opencontainers.image.source "https://github.com/scagood/profanity"
+LABEL org.opencontainers.image.source="https://github.com/scagood/profanity"
 
 RUN apk add --no-cache tini
 ENTRYPOINT ["/sbin/tini", "--"]
@@ -18,4 +18,4 @@ COPY . /app
 
 EXPOSE 8080
 
-CMD node index.js
+CMD ["node", "index.js"]
