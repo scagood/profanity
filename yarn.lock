@@ -234,14 +234,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"compromise@npm:14.16.0":
-  version: 14.16.0
-  resolution: "compromise@npm:14.16.0"
+"compromise@npm:14.17.0":
+  version: 14.17.0
+  resolution: "compromise@npm:14.17.0"
   dependencies:
     efrt: "npm:2.7.0"
     grad-school: "npm:0.0.5"
-    suffix-thumb: "npm:5.0.2"
-  checksum: 10/87509e44e77e39eadb733942fe2159b26c683dc4e459169b1d493337899a3aa5c943eca0fa8e703ca451e5516038f308ad6d134551592d95ea79b215f632b361
+    suffix-thumb: "npm:5.0.3"
+  checksum: 10/806ed6ed3ed963dc995d6a1e5af98b87f69337d80f008d4eca4f22a8756559ccea6415a80fb724929a05f4e3198ee17a771fa022d0c5a5265f92f282c98e8cde
   languageName: node
   linkType: hard
 
@@ -637,7 +637,7 @@ __metadata:
     "@types/express": "npm:5.0.6"
     "@types/http-errors": "npm:^2"
     "@types/node": "npm:24.13.4"
-    compromise: "npm:14.16.0"
+    compromise: "npm:14.17.0"
     express: "npm:5.2.1"
     http-errors: "npm:2.0.1"
     redis: "npm:6.2.1"
@@ -809,10 +809,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"suffix-thumb@npm:5.0.2":
-  version: 5.0.2
-  resolution: "suffix-thumb@npm:5.0.2"
-  checksum: 10/cd1d656c5804ad686b7d0b89eba3dcc47a55a8134c5f4dc6cff1cfb7b12bb26007ec8f58e52b5a29e0a9812d463f93f4091942f9cb6c76e53ab88280ded9c1cb
+"suffix-thumb@npm:5.0.3":
+  version: 5.0.3
+  resolution: "suffix-thumb@npm:5.0.3"
+  checksum: 10/e9e69913c74431bb3f4e944616dbfa7a1ab418774574cce58e6c743f7cb0e4022b783b142d84af5da387ea5fc00692f76165616c74aecc714261ecccaa99ef95
   languageName: node
   linkType: hard
 
