@@ -1,7 +1,9 @@
 name: cleanup
 on:
   schedule:
-    # Weekly, Monday 03:19 UTC
+    # Weekly, early Monday UTC. The exact minute is arbitrary, but GitHub
+    # delays or drops cron runs scheduled at busy times like :00, so an
+    # off-peak minute makes the run more likely to fire on time.
     - cron: '19 3 * * 1'
   workflow_dispatch:
 
