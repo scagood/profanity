@@ -231,14 +231,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"compromise@npm:14.17.0":
-  version: 14.17.0
-  resolution: "compromise@npm:14.17.0"
+"compromise@npm:14.18.0":
+  version: 14.18.0
+  resolution: "compromise@npm:14.18.0"
   dependencies:
-    efrt: "npm:2.7.0"
-    grad-school: "npm:0.0.5"
-    suffix-thumb: "npm:5.0.3"
-  checksum: 10/806ed6ed3ed963dc995d6a1e5af98b87f69337d80f008d4eca4f22a8756559ccea6415a80fb724929a05f4e3198ee17a771fa022d0c5a5265f92f282c98e8cde
+    efrt: "npm:2.9.0"
+    grad-school: "npm:0.0.9"
+    suffix-thumb: "npm:6.0.0"
+  checksum: 10/5fbb79675042d56b485000f744f49df86b604665887443f30329ab6e402e4f4e6e5a8ae0a98d30d86933b6ff41033621d9c86370f5d476ca6e8b90349bd637ff
   languageName: node
   linkType: hard
 
@@ -314,10 +314,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"efrt@npm:2.7.0":
-  version: 2.7.0
-  resolution: "efrt@npm:2.7.0"
-  checksum: 10/76febcd9efccce436beca5c5cc056187f9d9f4c64c9528b6fb467b4eb91f2b9f689f602f2451cd6bf37c77a2664b38ae4a6c506c03db462fec6c74d9d92b4e67
+"efrt@npm:2.9.0":
+  version: 2.9.0
+  resolution: "efrt@npm:2.9.0"
+  checksum: 10/10735d0fdfb7e7937ca0eb1dab2e13df4f2978108b6d61b74d00626c95b57c4acc3e89262ea8e807698d876f9e8f5255bceea32f99e80308b4abe69a28b7a6d1
   languageName: node
   linkType: hard
 
@@ -481,10 +481,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"grad-school@npm:0.0.5":
-  version: 0.0.5
-  resolution: "grad-school@npm:0.0.5"
-  checksum: 10/1330b02b71ef37f9a507261c1219056d19caa46f99e65fe30fe9b5c98235b5dec23d74928ed166516054b30c4cf470903de482311d2d25d985e904989b53c69a
+"grad-school@npm:0.0.9":
+  version: 0.0.9
+  resolution: "grad-school@npm:0.0.9"
+  checksum: 10/3bcda445303bea0368af8c8231183fbb40a66234161d7052f9058dfe0dae2df859eed910fa4efc492714cffab6d6764e4c9fc4d50193570b5ddd974b98900a66
   languageName: node
   linkType: hard
 
@@ -647,7 +647,7 @@ __metadata:
     "@types/express": "npm:5.0.6"
     "@types/http-errors": "npm:^2"
     "@types/node": "npm:24.19.1"
-    compromise: "npm:14.17.0"
+    compromise: "npm:14.18.0"
     express: "npm:5.2.1"
     http-errors: "npm:2.0.1"
     redis: "npm:6.3.0"
@@ -819,10 +819,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"suffix-thumb@npm:5.0.3":
-  version: 5.0.3
-  resolution: "suffix-thumb@npm:5.0.3"
-  checksum: 10/e9e69913c74431bb3f4e944616dbfa7a1ab418774574cce58e6c743f7cb0e4022b783b142d84af5da387ea5fc00692f76165616c74aecc714261ecccaa99ef95
+"suffix-thumb@npm:6.0.0":
+  version: 6.0.0
+  resolution: "suffix-thumb@npm:6.0.0"
+  checksum: 10/cdc50528cc82fe19e5c54d0449925e0c4e7f4b02313e4b33d5a1c4052fd800289103e8c0b0f9e1536ea81f85ab20246f117055cc5489f92b5e73cfd84fd9e222
   languageName: node
   linkType: hard
 
